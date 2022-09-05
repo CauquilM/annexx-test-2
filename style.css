@@ -1,0 +1,191 @@
+body {
+  background-color: #edf3f2;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bolder;
+}
+
+h1 {
+  margin-top: 160px;
+}
+
+#step-square-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#step-square-group {
+  margin-top: 50px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.step-square {
+  background: white;
+  height: 180px;
+  width: 220px;
+  padding: 20px 50px 10px 50px;
+}
+
+.step-square-text {
+  color: #575858;
+}
+
+#img-book {
+  margin-top: 10px;
+}
+
+#span-bold,
+.span-bold-underline,
+.title {
+  font-weight: bolder;
+}
+
+.span-bold-underline {
+  text-decoration: underline;
+}
+
+#form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+#form > #form-arrow {
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+#postal-code {
+  width: 180px;
+  height: 50px;
+  padding: 0 17px;
+}
+
+#form-button {
+  margin: 0 80px 0 -5px;
+  background: #27ae60 url(./assets/img/loupe-recherche-annexx-blc.svg) no-repeat
+    scroll 5% center/10% auto;
+  color: white;
+  border: none;
+  height: 54px;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  padding: 15px 10px 17px 40px;
+}
+
+@media all and (max-width: 1340px) {
+  #step-square-group {
+    width: 100%;
+  }
+
+  .step-square {
+    background: white;
+    height: 130px;
+    width: 170px;
+    padding: 30px 50px 50px 50px;
+  }
+
+  #img-book {
+    width: 70px;
+  }
+
+  .step-square-img {
+    width: 40px;
+  }
+}
+
+@media all and (max-width: 1150px) {
+  #step-square-group {
+    width: 100%;
+  }
+
+  .step-square {
+    height: 60px;
+    width: 150px;
+    font-size: 0.7em;
+    padding: 30px 30px 80px 30px;
+  }
+
+  #img-book {
+    width: 70px;
+  }
+
+  .step-square-img {
+    width: 40px;
+  }
+}
+
+@media all and (max-width: 917px) {
+  #step-square-group {
+    width: 100%;
+  }
+
+  .step-square {
+    height: 60px;
+    width: 110px;
+    font-size: 0.7em;
+    padding: 30px 30px 80px 30px;
+  }
+
+  #img-book {
+    width: 70px;
+  }
+
+  .step-square-img {
+    width: 40px;
+  }
+}
+
+@media all and (max-width: 769px) {
+  #step-square-group {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step-square {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 70%;
+    font-size: 0.7em;
+    padding: 30px 20px 80px 30px;
+  }
+
+  .step-square-responsive{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+  }
+
+  #img-book {
+    width: 70px;
+    margin-right: 10px;
+  }
+
+  .step-square-img {
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+  }
+
+  #form{
+    margin-left: 10px;
+  }
+
+  #form-button{
+    margin: 0;
+  }
+
+  #form-arrow {
+    display: none;
+  }
+}

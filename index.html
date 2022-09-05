@@ -1,13 +1,90 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Annexx</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div>
+      <h1>Réservez votre box en 4 étapes</h1>
+      <div id="step-square-container">
+        <div id="step-square-group">
+          <div class="step-square">
+            <div class="step-square-responsive">
+              <p class="step-square-title">1. CHOISSISEZ</p>
+
+              <p class="step-square-text">
+                La taille de box qu'il vous faut avec notre
+                <span class="span-bold-underline">simulateur en ligne</span>
+              </p>
+            </div>
+            <img
+              class="step-square-img"
+              src="./assets/img/box.png"
+              alt="image d'un box"
+              width="70px"
+            />
+          </div>
+          <div class="step-square">
+            <div class="step-square-responsive">
+              <p class="step-square-title">2. RESERVEZ</p>
+              <p class="step-square-text">
+                Le box dans la ville de votre choix en quelques clics
+              </p>
+            </div>
+            <img id="img-book" src="./assets/img/book.png" alt="réservation" />
+          </div>
+          <div class="step-square">
+            <div class="step-square-responsive">
+              <p class="step-square-title">3. FINALISEZ</p>
+              <p class="step-square-text">
+                Votre contrat à distance avec la location
+                <span id="span-bold">zéro contact</span>
+              </p>
+            </div>
+            <img
+              class="step-square-img"
+              src="./assets/img/folder.png"
+              alt="image d'un fichier"
+            />
+          </div>
+          <div class="step-square">
+            <div class="step-square-responsive">
+              <p class="step-square-title">4. DEMENAGEZ</p>
+              <p class="step-square-text">
+                Quand vous le souhaitez. Besoin de
+                <span class="span-bold-underline">cartons</span>
+              </p>
+            </div>
+            <img
+              class="step-square-img"
+              src="./assets/img/truck.png"
+              alt="image d'un camion"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div id="form">
+        <img
+          id="form-arrow"
+          src="./assets/img/arrow.png"
+          alt="image d'une flèche"
+          width="40px"
+        />
+        <form action="" method="post">
+          <input
+            type="text"
+            name="postal-code"
+            id="postal-code"
+            placeholder="Ville ou code postal ..."
+          />
+          <button id="form-button">Trouver mon box</button>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
