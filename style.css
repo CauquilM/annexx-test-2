@@ -13,7 +13,6 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 
 #step-square-group {
@@ -79,9 +78,6 @@ h1 {
 }
 
 @media all and (max-width: 1340px) {
-  #step-square-group {
-    width: 100%;
-  }
 
   .step-square {
     background: white;
@@ -100,9 +96,6 @@ h1 {
 }
 
 @media all and (max-width: 1150px) {
-  #step-square-group {
-    width: 100%;
-  }
 
   .step-square {
     height: 60px;
@@ -110,40 +103,28 @@ h1 {
     font-size: 0.7em;
     padding: 30px 30px 80px 30px;
   }
-
-  #img-book {
-    width: 70px;
-  }
-
-  .step-square-img {
-    width: 40px;
-  }
 }
 
-@media all and (max-width: 917px) {
-  #step-square-group {
-    width: 100%;
-  }
-
+@media all and (max-width: 919px){
   .step-square {
     height: 60px;
-    width: 110px;
-    font-size: 0.7em;
-    padding: 30px 30px 80px 30px;
-  }
-
-  #img-book {
-    width: 70px;
-  }
-
-  .step-square-img {
-    width: 40px;
+    width: 130px;
+    font-size: 0.6em;
+    padding: 30px 20px 80px 20px;
   }
 }
 
 @media all and (max-width: 769px) {
+  body {
+    font-size: 1.5em;
+  }
+
+  h1 {
+    margin-top: 0;
+    font-size: 1.5em;
+  }
+
   #step-square-group {
-    width: 100%;
     flex-direction: column;
     align-items: center;
   }
@@ -156,19 +137,16 @@ h1 {
     align-items: center;
     height: 60px;
     width: 70%;
-    font-size: 0.7em;
     padding: 30px 20px 80px 30px;
   }
 
-  .step-square-responsive{
+  .step-square-responsive {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-
   }
 
   #img-book {
-    width: 70px;
     margin-right: 10px;
   }
 
@@ -178,15 +156,55 @@ h1 {
     height: 50px;
   }
 
-  #form{
+  #form {
     margin-left: 10px;
   }
 
-  #form-button{
+  #form-button {
     margin: 0;
   }
 
   #form-arrow {
     display: none;
+  }
+}
+@media all and (max-width: 524px) {
+  body {
+    font-size: 1.2em;
+  }
+
+  h1 {
+    font-size: 1em;
+  }
+
+  #step-square-group {
+    margin-top: 0;
+  }
+
+  #postal-code {
+    width: 140px;
+    height: 40px;
+    padding: 0 17px;
+  }
+
+  #form-button {
+    margin: 0 7px 0 -5px;
+    height: 44px;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+  }
+}
+@media all and (max-width: 321px) {
+  #postal-code {
+    width: 80px;
+    height: 40px;
+    padding: 0 17px;
+  }
+
+  #form-button {
+    margin: 0 7px 0 -5px;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    padding: 15px 5px 17px 30px;
   }
 }
